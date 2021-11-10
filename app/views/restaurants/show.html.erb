@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
 
+
+      <h1>Welcome</h1>
 <p>
   <strong>Name:</strong>
   <%= @restaurant.name %>
@@ -19,12 +20,6 @@
   <strong>category:</strong>
   <%= @restaurant.category %>
 </p>
-
-<p>
-  <strong>category:</strong>
- <%= @restaurants.reviews %>
-<p>
-
 <% @restaurant.reviews.each do |review| %>
  <p><%= review.content %> - <%= link_to "Destroy review", review_path(review), method: :delete %> </p>
 <% end %>
